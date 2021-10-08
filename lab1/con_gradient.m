@@ -11,7 +11,7 @@ while true
     alpha = (r0'* r0)/(p'*A * p);
         w = w + alpha * p;
         r = r0-alpha*A*p;
-        %%Âú×ã¾«¶ÈÊ±ÍË³ö
+        %%æ»¡è¶³ç²¾åº¦æ—¶é€€å‡º
         if r0'*r0 < delta;
             break;
         end
@@ -20,7 +20,7 @@ while true
         r0 = r;
         k =k+1;
 end
-%%¼ÇÂ¼ÑµÁ·´ÎÊý
+%%è®°å½•è®­ç»ƒæ¬¡æ•°
 trainTimes=k;
 paint(w,col-1,x);
 end
