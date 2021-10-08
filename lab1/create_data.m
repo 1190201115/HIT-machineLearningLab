@@ -1,8 +1,8 @@
 function [data_x,data_y,X] = create_data(size,order,average,sigma )
-%   ÊäÈëÊı¾İ¼¯´óĞ¡size£¬½×Êıorder,ÔëÉù¾ùÖµaverageºÍ±ê×¼²îsigma
+%   è¾“å…¥æ•°æ®é›†å¤§å°sizeï¼Œé˜¶æ•°order,å™ªå£°å‡å€¼averageå’Œæ ‡å‡†å·®sigma
 %
-%   data_xÎªÔÚ0-1Ö®¼äµÄËæ»úÊı£¬1*size´óĞ¡µÄ¾ØÕó¡£data_yÎªsize*1µÄ¾ØÕó¡£
-%   ²úÉúÒÔaverageÎª¾ùÖµ£¬sigmaÎª±ê×¼²îµÄÔëÉùnoise
+%   data_xä¸ºåœ¨0-1ä¹‹é—´çš„éšæœºæ•°ï¼Œ1*sizeå¤§å°çš„çŸ©é˜µã€‚data_yä¸ºsize*1çš„çŸ©é˜µã€‚
+%   äº§ç”Ÿä»¥averageä¸ºå‡å€¼ï¼Œsigmaä¸ºæ ‡å‡†å·®çš„å™ªå£°noise
 %   
 data_x=rand(1,size);
 sin_func=sin(2*pi*data_x);
