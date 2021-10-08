@@ -1,11 +1,11 @@
 function [ train_times ] = gradient_paint(x,order,data_x,data_y,lamda)
-%³õÊ¼ÏµÊıÉèÖÃÎªÈ«0
+%åˆå§‹ç³»æ•°è®¾ç½®ä¸ºå…¨0
 w = zeros(order+1, 1);
-%¼ÆËãµ±Ç°´ú¼Û
+%è®¡ç®—å½“å‰ä»£ä»·
 old_loss=cal_loss(order,w,data_x,data_y);
 tempw=w;
 train_rate=0.02;
-train_times=1000000;%%×î´óÑµÁ·´ÎÊı
+train_times=1000000;%%æœ€å¤§è®­ç»ƒæ¬¡æ•°
 for j=1:train_times
     
     hypo_y=cal_hypoY(order,w,data_x);
@@ -13,7 +13,7 @@ for j=1:train_times
         tempw(i)=w(i)-train_rate*(sum((hypo_y-data_y).*(data_x.^(i-1))')+lamda*w(i));
     end
     new_loss=cal_loss(order,tempw,data_x,data_y);
-    %%Âú×ã¾«¶ÈÊ±£¬¼ÇÂ¼ÑµÁ·´ÎÊı£¬ÍË³öµü´ú
+    %%æ»¡è¶³ç²¾åº¦æ—¶ï¼Œè®°å½•è®­ç»ƒæ¬¡æ•°ï¼Œé€€å‡ºè¿­ä»£
     if abs(old_loss-new_loss)<10^-6
         train_times=j;
         break;
