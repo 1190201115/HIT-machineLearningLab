@@ -1,4 +1,4 @@
-%%»æÖÆsin(2pix)µÄº¯ÊıÍ¼Ïñ
+%%Â»Ã¦Ã–Ã†sin(2pix)ÂµÃ„ÂºÂ¯ÃŠÃ½ÃÂ¼ÃÃ±
 function [ ] = origin_paint( x,data_x,data_y )
 text(data_x,data_y,'o');
 hold on;
