@@ -1,5 +1,5 @@
 function [ hypo_y ] = cal_hypoY(order,w,data_x)
-%根据输入的数据集大小，阶数，系数，x矩阵产生对应的y矩阵
+%鏍规嵁杈撳叆鐨勬暟鎹泦澶у皬锛岄樁鏁帮紝绯绘暟锛寈鐭╅樀浜х敓瀵瑰簲鐨剏鐭╅樀
 [~,num]=size(data_x);
 hypo_y=zeros(1,num);
 for j=1:num
