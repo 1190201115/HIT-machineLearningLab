@@ -1,4 +1,4 @@
-%%»æÖÆº¯ÊıÍ¼Ïñ
+%%Â»Ã¦Ã–Ã†ÂºÂ¯ÃŠÃ½ÃÂ¼ÃÃ±
 function [] = paint(w,order,x )
 y=0;
 for i=1:order+1
